@@ -1,0 +1,43 @@
+.title, h4 {
+    text-align: center;
+}
+
+h2 {
+    color: #0fb784;
+}
+.align-content-lg-center {
+    /*background-color: whitesmoke;*/
+    border-bottom: 8px solid #0fb784;
+    padding:5px;
+
+}
+
+.skills {
+    color: #0fb784;
+}
+.academic {
+    color: #0fb784;
+}
+
+.professional {
+    color: #0fb784;
+}
+.development {
+    color: #0fb784;
+}
+.awards {
+    color: #0fb784;
+}
+.col-5 {
+    float:right;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:50em;
+    max-height: 20em;
+    position:absolute;
+}
+.col-6 {
+    margin-left:auto;
+    margin-right:auto;
+    position:absolute;
+}
