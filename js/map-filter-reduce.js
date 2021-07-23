@@ -50,3 +50,27 @@ let totalYearsExp = users.reduce(function (accumulator, user){
     return accumulator+user.yearsOfExperience;
 }, 0)
 console.log(totalYearsExp)
+
+let averageExp = totalYearsExp/ users.length;
+console.log(averageExp)
+
+let longestEmail= users.reduce(function (currentLongest, user){
+    if(user.email.length > currentLongest.email.length) {
+        return user;
+    } else {
+        return currentLongest;
+    }
+}, user[0])
+
+console.log(longestEmail.email);
+
+let nameString = users.reduce(function (accumulator, user) {
+    if (accumulator === '') {
+        return 'Your instructors are: ' + user.name;
+    } else {
+        return accumulator + ', ' + user.name
+    }
+}, '')
+console.log(nameString + '.')
+
+
