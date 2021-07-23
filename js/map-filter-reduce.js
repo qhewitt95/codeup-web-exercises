@@ -73,4 +73,18 @@ let nameString = users.reduce(function (accumulator, user) {
 }, '')
 console.log(nameString + '.')
 
+let concatLangs = users.reduce(function (accumulator, user){
+    return accumulator.concat(user.languages);
+}, [])
+console.lg(concatLangs)
+
+let uniqueLangs = concatLangs.reduce(function (accumulator, currentValue){
+    if(accumulator.indexOf(currentValue) === -1){
+        accumulator.push(currentValue);
+    } else {
+        return accumulator;
+    }
+}, [])
+console.log(uniqueLangs)
+
 
