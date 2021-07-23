@@ -35,3 +35,12 @@ const users = [
         yearsOfExperience: 9
     }
 ];
+
+
+console.log(users.filter(function(n) {
+    return n.languages.length >=3
+}));
+
+let emailAddresses = users.map(function (user){
+    return user.email;
+})
