@@ -44,3 +44,9 @@ console.log(users.filter(function(n) {
 let emailAddresses = users.map(function (user){
     return user.email;
 })
+console.log(emailAddresses)
+
+let totalYearsExp = users.reduce(function (accumulator, user){
+    return accumulator+user.yearsOfExperience;
+}, 0)
+console.log(totalYearsExp)
